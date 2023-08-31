@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./variable", "./mixin";
+@import "./../styles/_header";
+@import "react-toastify/dist/ReactToastify.css";
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  vertical-align: middle;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+*,
+::before,
+::after {
+  border-width: 0;
+  border-style: solid;
+  border-color: theme("borderColor.DEFAULT", currentColor);
+}
+
+.google-map * {
+  border-style: none;
+}
+
+.h_style {
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  border-bottom: 1px solid;
+  h1 {
+    font-weight: 600;
+  }
+}
+
+#nprogress {
+  .bar,
+  .spinner {
+    z-index: 1300000000 !important;
+  }
+}

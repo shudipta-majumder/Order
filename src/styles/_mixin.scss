@@ -1,0 +1,14 @@
+@import "./variable";
+@mixin section_title {
+  color: $primary_dark;
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+@mixin section_sub_title {
+  color: secondary_dark;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
